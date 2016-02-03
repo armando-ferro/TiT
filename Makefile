@@ -12,3 +12,7 @@ clean:
 	-rm -f *.o
 	-rm -f ${FILES}
 
+test: ${FILES}
+#	echo "World" | ./test_hello
+	./hello | ./test_hello
+
