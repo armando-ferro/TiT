@@ -1,0 +1,10 @@
+language: c
+compiler:
+- clang
+- gcc
+
+script: make test
+
+before_install:
+  - test -n $CC && unset CC
+
